@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$background-color-1: hsl(180, 20%, 75%);
+$panel-color-1: white;
+$font-1: 'Roboto', sans-serif;
+
+* {
+    border-style: dashed;
+}
+
+@mixin content-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin container-border {
+    border: 2.5px solid black;
+    border-radius: 3px;
+}
+
+body {
+    background-color: $background-color-1;
+}
+
+#container {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 250px 250px;
+    gap: 15px;
+    font-family: $font-1;
+    @include content-center;
+}
+
+#container {
+    div {
+        @include container-border;
+        background-color: $panel-color-1;
+        font-family: $font-1;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@for $i from 1 through 5 {
+    .div-#{$i}{
+        grid-column-start: 0 + $i;
+        grid-column-end: 1 + $i;
+        grid-row: 1/2;
+    }
+}
