@@ -4,9 +4,9 @@ $background-color-1: hsl(180, 20%, 75%);
 $panel-color-1: white;
 $font-1: 'Roboto', sans-serif;
 
-* {
-    border-style: dashed;
-}
+// * {
+//     border-style: dashed;
+// }
 
 @mixin content-center {
     margin-left: auto;
