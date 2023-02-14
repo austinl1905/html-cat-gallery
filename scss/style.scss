@@ -6,9 +6,9 @@ $panel-color-1: white;
 $font-1: 'Roboto', sans-serif;
 $font-2: 'Open Sans', sans-serif;
 
-* {
-    border-style: dashed;
-}
+// * {
+//     border-style: dashed;
+// }
 
 @mixin content-center {
     margin-left: auto;

@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
-* {
-  border-style: dashed;
-}
-
 body {
   background-color: hsl(180deg, 20%, 75%);
 }
